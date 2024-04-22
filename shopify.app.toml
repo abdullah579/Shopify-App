@@ -3,12 +3,12 @@
 client_id = "840e9101eff951d30a606acad694c1c6"
 name = "hello-marchant-app"
 handle = "hello-marchant-app"
-application_url = "https://experiences-cry-kinda-history.trycloudflare.com"
+application_url = "https://atomic-fiction-details-detected.trycloudflare.com"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-dev_store_url = "lumin-app-test.myshopify.com"
+dev_store_url = "manupulation-store.myshopify.com"
 include_config_on_deploy = true
 
 [access_scopes]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://experiences-cry-kinda-history.trycloudflare.com/auth/callback",
-  "https://experiences-cry-kinda-history.trycloudflare.com/auth/shopify/callback",
-  "https://experiences-cry-kinda-history.trycloudflare.com/api/auth/callback"
+  "https://atomic-fiction-details-detected.trycloudflare.com/auth/callback",
+  "https://atomic-fiction-details-detected.trycloudflare.com/auth/shopify/callback",
+  "https://atomic-fiction-details-detected.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

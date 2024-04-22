@@ -8,8 +8,6 @@ export async function loader() {
   // provides data to the component
 
   let formData = await db.User.findFirst();
-
-  console.log("User ...", formData);
   return json(formData);
 }
 
@@ -20,7 +18,7 @@ export async function action({request}) {
 
   await db.User.upsert({
     where: {
-      id: 1
+      email: submitData.email
     },
     update: {
       name: submitData.name,
