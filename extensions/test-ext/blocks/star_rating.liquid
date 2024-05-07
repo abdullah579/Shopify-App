@@ -1,0 +1,36 @@
+{% comment %}
+
+{% assign avg_rating = 4.12 | round %}
+<span style="color:{{ block.settings.colour }}">
+  {% render 'stars', rating: avg_rating %}
+</span>
+{% if avg_rating >= 4 %}
+  <br>
+  <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
+  {{ 'ratings.home.recommendationText' | t }}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Star Rating",
+  "target": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
+{% endcomment %}
+
+<div style="position: fixed; bottom: 15px; right: 15px; background-color: #175b5b; padding: 25px; border-radius: 18px 30px 18px">
+    <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy"/>
+</div>
+{% schema %}
+  {
+    "name": "Dekha Jak",
+    "target": "body",
+    "settings": []
+  }
+{% endschema %}
+
