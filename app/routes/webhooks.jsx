@@ -16,6 +16,12 @@ export const action = async ({ request }) => {
       }
 
       break;
+    case "CUSTOMERS_CREATE":
+      console.log("-------hit customer webhook--------")
+      console.log(payload)
+      console.log("-------hit customer webhook end--------")
+
+      break;
     case "CUSTOMERS_DATA_REQUEST":
     case "CUSTOMERS_REDACT":
     case "SHOP_REDACT":

@@ -24,6 +24,16 @@ const shopify = shopifyApp({
       deliveryMethod: DeliveryMethod.Http,
       callbackUrl: "/webhooks",
     },
+    CUSTOMERS_CREATE: {
+      deliveryMethod: DeliveryMethod.Http,
+      callbackUrl: "/webhooks",
+      callback: async (topic, shop, body, webhookId) => {
+        console.log("------Finaly Got It --------")
+        const payload = JSON.parse(body)
+        console.log(payload);
+        console.log("----Again Done")
+      }
+    },
   },
   hooks: {
     afterAuth: async ({ session }) => {

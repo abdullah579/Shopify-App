@@ -3,7 +3,7 @@
 client_id = "840e9101eff951d30a606acad694c1c6"
 name = "hello-marchant-app"
 handle = "hello-marchant-app"
-application_url = "https://properties-carlos-telecommunications-commitments.trycloudflare.com"
+application_url = "https://interfaces-eggs-intake-apollo.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_customers,write_customers,write_products"
 
 [auth]
 redirect_urls = [
-  "https://properties-carlos-telecommunications-commitments.trycloudflare.com/auth/callback",
-  "https://properties-carlos-telecommunications-commitments.trycloudflare.com/auth/shopify/callback",
-  "https://properties-carlos-telecommunications-commitments.trycloudflare.com/api/auth/callback"
+  "https://interfaces-eggs-intake-apollo.trycloudflare.com/auth/callback",
+  "https://interfaces-eggs-intake-apollo.trycloudflare.com/auth/shopify/callback",
+  "https://interfaces-eggs-intake-apollo.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
