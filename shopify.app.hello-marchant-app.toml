@@ -1,0 +1,34 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "840e9101eff951d30a606acad694c1c6"
+name = "hello-marchant-app"
+handle = "hello-marchant-app"
+application_url = "https://hazard-population-tx-use.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "manupulation-store.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://hazard-population-tx-use.trycloudflare.com/auth/callback",
+  "https://hazard-population-tx-use.trycloudflare.com/auth/shopify/callback",
+  "https://hazard-population-tx-use.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[webhooks.privacy_compliance]
+customer_deletion_url = "https://louisiana-fee-midwest-cal.trycloudflare.com/api/webhooks/customer_deletion"
+customer_data_request_url = "https://louisiana-fee-midwest-cal.trycloudflare.com/api/webhooks/customer_request"
+shop_deletion_url = "https://louisiana-fee-midwest-cal.trycloudflare.com/api/webhooks/deletion"
+
+[pos]
+embedded = false

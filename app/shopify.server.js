@@ -27,12 +27,10 @@ const shopify = shopifyApp({
     CUSTOMERS_CREATE: {
       deliveryMethod: DeliveryMethod.Http,
       callbackUrl: "/webhooks",
-      callback: async (topic, shop, body, webhookId) => {
-        console.log("------Finaly Got It --------")
-        const payload = JSON.parse(body)
-        console.log(payload);
-        console.log("----Again Done")
-      }
+    },
+    PRODUCTS_UPDATE: {
+      deliveryMethod: DeliveryMethod.Http,
+      callbackUrl: "/webhooks",
     },
   },
   hooks: {
